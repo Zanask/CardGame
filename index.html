@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@znk.hh - Joel Martinez</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script defer src="js/hola.js"></script>
+    <link rel="shortcut icon" href="img/social.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="menu" class="containers">
+      <h2>Menu</h2>
+      <button id="play-button">Play Game</button>
+      <button id="data-button">See Played Games</button>
+    </div>
+    <div class="containers" id="playercard"></div>
+    <div id="game" class="containers">
+      <div>Vidas: 
+        <div id="hp">10</div>
+      </div>
+      <div>Score: 
+        <div id="score">0</div>
+      </div>
+      <div>Contador:
+        <div id="contador">0</div>
+      </div>
+      <div id="dealer-hand">Dealer Hand:</div>
+      <div id="player-hand">Player Hand:</div>
+      <div id="buttons">
+        <button id="hit-button">Hit</button>
+      </div>
+    </div>
+    <div class="containers" id="machinecard"></div>
+    <div id="form" class="containers">
+      <form action="">
+        <h2>Contact Form</h2>
+        <div class="form-controll">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required/>
+          <span id="errorName"></span>
+        </div>
+        <div class="form-controll">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" placeholder="Enter your lastname" required/>
+          <span id="errorLastName"></span>
+        </div>
+        <!-- Numero de puntos y tiempo dedicado hidden -->
+        <div class="form-controll">
+          <label for="lastname">Numero Puntos</label>
+          <input type="hidden" id="puntos"/>
+        </div>
+        <div class="form-controll">
+          <label for="lastname">Tiempo dedicado</label>
+          <input type="hidden" id="tiempo"/>
+        </div>
+        <div class="form-controll">
+          <label for="like">Did you like the game?</label>
+          <input type="radio" id="like" name="like" value="yes" checked/>Yes
+          <input type="radio" id="like" name="like" value="no"/>No
+        </div>
+        <button type="button" id="btn">Submit</button>
+      </form>
+    </div>
+    <div class="containers-fluid" id="datas">
+      <div>
+        <h2>Data</h2>
+        <div id="data">
+          
+        </div>
+        <button type="button" id="menu-button">Volver al Menu</button>
+      </div>
+    </div>
+  </body>
+</html>

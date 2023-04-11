@@ -1,0 +1,242 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: cambiarFondo 5s infinite alternate linear;
+  font-family: sans-serif;
+}
+
+@keyframes cambiarFondo{
+  0%  { background: #ee6055; }
+  25% { background: #60d394; }
+  50% { background: #aaf683; }
+  75% { background: #ffd97d; }
+  100%{ background: #ff9e9d; }
+}
+
+#playercard{
+  display: none;
+  background-image: url(../img/magic-backwards.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+
+#playercard:hover, #machinecard:hover{
+  transform: scale(1.1);
+}
+
+#machinecard{
+  display: none;
+  background-image: url(../img/pokemon-backwards.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s ease;
+}
+
+#form, #datas, #game{
+  display: none;
+}
+
+#menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#menu button{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  outline: none;
+  background: #dab849;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 30px 10px 30px;
+}
+
+#menu button:hover{
+  background: #fff;
+  color: #dab849;
+}
+
+#game{
+  color: white;
+  text-align: center;
+}
+
+#game *{
+  margin: 10px;
+  width: 95%;
+}
+
+#datas button
+{
+  width: 200px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  outline: none;
+  background: #dab849;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 30px 10px 30px;
+}
+
+#datas button:hover{
+  background: #fff;
+  color: #dab849;
+}
+
+.line{
+  display: flex;
+}
+
+.containers-fluid{
+  width: 90%;
+  margin: 50px;
+  background: #15292B;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containers{
+  margin: 20px;
+  width: 100%;
+  min-height: 500px;
+  max-width: 400px;
+  background: #15292B;
+  padding: 20px;
+  border-radius: 5px;
+
+  /* Box Shadow 3d */
+  box-shadow: 0 0 10px rgba(0,0,0,2.5);
+}
+
+h2{
+  text-align: center;
+  color: #fff !important;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-controll{
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-controll input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#prefix{
+  width: 20%;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+#phone{
+  width: 80%;
+  border-radius: 0 5px 5px 0;
+}
+
+.form-controll input:focus{
+  border-color: #f7be04;
+}
+
+.form-controll label{
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.form-controll select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  outline: none;
+  background: #dab849;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #fff;
+  color: #dab849;
+}
+
+span{
+  color: #f70404;
+  font-size: 14px;  
+  margin-left: 20px;
+}
+
+.card{
+  margin: 20px;
+}
+
+.card-body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.card-body *{
+  margin: 10px;
+}
+
+input[type="radio"]{
+  display: flex ;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="hidden"]{
+  background: #fff;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+
+}
